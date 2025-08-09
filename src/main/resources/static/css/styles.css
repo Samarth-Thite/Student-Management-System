@@ -1,0 +1,72 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --primary: #2563eb;
+  --danger: #ef4444;
+  --border: #1f2937;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 80% 10%, #1f2937, transparent), var(--bg);
+  color: var(--text);
+}
+
+.container { width: min(1100px, 92%); margin: 0 auto; }
+header { padding: 24px 0; }
+h1 { margin: 0; font-size: 28px; letter-spacing: 0.5px; }
+
+.grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .grid { grid-template-columns: 380px 1fr; } }
+
+.card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.02), transparent);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  backdrop-filter: blur(6px);
+}
+
+.field { display: grid; gap: 6px; margin-bottom: 12px; }
+label { color: var(--muted); font-size: 13px; }
+input {
+  border: 1px solid var(--border);
+  background: #0b1220;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+}
+input:focus { border-color: #2c5cff; box-shadow: 0 0 0 3px rgba(44,92,255,0.1); }
+
+.actions { display: flex; gap: 10px; margin-top: 8px; }
+.btn {
+  border: 1px solid var(--border);
+  background: #0b1220;
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn.primary { background: linear-gradient(180deg, #2c5cff, #1e40af); border-color: #2c5cff; }
+.btn.danger { background: linear-gradient(180deg, #ef4444, #b91c1c); border-color: #ef4444; }
+
+.message { margin-top: 10px; min-height: 20px; font-size: 14px; color: var(--muted); }
+
+.list-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.list-header input {
+  width: 280px; max-width: 50%;
+}
+
+.table-responsive { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid var(--border); padding: 10px; text-align: left; }
+th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; }
+tr:hover { background: rgba(255,255,255,0.02); }
+.actions-cell { display: flex; gap: 8px; }
+
+

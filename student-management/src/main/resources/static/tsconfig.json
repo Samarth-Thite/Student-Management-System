@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "system",        // ✅ changed from "ES6" to "system"
+    "outFile": "app.js",       // ✅ bundles to single JS file
+    "strict": true
+  },
+  "include": ["app.ts"]
+}
