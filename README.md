@@ -1,61 +1,104 @@
-🎓 Student Management System
-A Spring Boot REST API application with a responsive HTML, CSS, and JavaScript frontend to manage student records, using PostgreSQL as the backend database.
-Follows MVC architecture and demonstrates full integration between the frontend and backend.
+# Student Management System
 
-✅ Features
-➕ Add a student
+A comprehensive web-based application for managing student records built with Spring Boot and Hibernate.
 
-📋 View all students
+## Features
 
-✏️ Update student details
+- Add new student records
+- View all student records
+- Update existing student information
+- Delete student records
+- Search functionality
+- Modern and responsive UI
+- RESTful API endpoints
 
-❌ Delete a student
+## Tech Stack
 
-🌐 Responsive UI for easy access across devices
+- Backend:
+  - Spring Boot
+  - Hibernate/JPA
+  - MySQL Database
+  - Maven
 
-💻 Technologies
-Java 17
+- Frontend:
+  - HTML5
+  - CSS3
+  - JavaScript
+  - Bootstrap
 
-Spring Boot (REST API)
+## Prerequisites
 
-HTML, CSS, JavaScript
+- Java 17 or higher
+- Maven 3.8.x
+- MySQL 8.x
+- IDE (IntelliJ IDEA, Eclipse, or VS Code)
 
-PostgreSQL
+## Getting Started
 
-Hibernate (JPA)
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd student-management-system
+```
 
-Maven
+2. Build the project:
+```bash
+mvn clean install
+```
 
-📂 Project Structure
-csharp
-Copy
-Edit
-src/
- └── main/
-     ├── java/
-     │   ├── controller/        # REST API Controllers
-     │   ├── service/           # Business Logic
-     │   ├── repository/        # Data Access (JPA)
-     │   ├── entity/            # Student Entity
-     │   └── StudentManagementSystemApplication.java
-     └── resources/
-         ├── static/            # HTML, CSS, JS
-         └── application.properties
+3. Configure database:
+- Open `src/main/resources/application.properties`
+- Update database connection settings:
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/student_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
 
-         
-📸 Screenshots
+4. Run the application:
+```bash
+mvn spring-boot:run
+```
 
-🖥 Application UI
+5. Access the application:
+- Open your web browser
+- Navigate to: `http://localhost:8080`
 
-📜 API Response Example
+## Project Structure
 
-👤 Author & Team
+```
+student-management-system/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── com.example.student/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── service/
+│   │   │   │   ├── model/
+│   │   │   │   └── repository/
+│   │   ├── resources/
+│   │   │   ├── static/
+│   │   │   │   ├── css/
+│   │   │   │   ├── js/
+│   │   │   │   └── index.html
+│   │   │   └── application.properties
+└── pom.xml
+```
 
-Name: Samarth Thite
+## API Endpoints
 
-Email: samarththite1010@gmail.com
+- GET `/api/students` - Get all students
+- POST `/api/students` - Add new student
+- PUT `/api/students/{id}` - Update student
+- DELETE `/api/students/{id}` - Delete student
 
-GitHub: Samarth-Thite
+## Contributing
 
-Team Member: Kartik Gade
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
+
+![Student Management System Output](https://github.com/Samarth-Thite/Student-Management-System/Screenshots/1.png)
