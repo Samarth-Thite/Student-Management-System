@@ -101,4 +101,4 @@ student-management-system/
 5. Create a Pull Request
 
 
-![Student Management System Output](https://github.com/Samarth-Thite/Student-Management-System/Screenshots/1.png)
+![Student Management System Output](https://github.com/Samarth-Thite/Student-Management-System/screenshots/screenshot(12)png)
