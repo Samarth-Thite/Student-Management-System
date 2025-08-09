@@ -1,62 +1,61 @@
-# 🎓 Student Management System
+🎓 Student Management System
+A Spring Boot REST API application with a responsive HTML, CSS, and JavaScript frontend to manage student records, using PostgreSQL as the backend database.
+Follows MVC architecture and demonstrates full integration between the frontend and backend.
 
-A **console-based Java application** to manage student records using **JPA (Hibernate)** and **PostgreSQL**.
+✅ Features
+➕ Add a student
 
----
+📋 View all students
 
-## ✅ Features
+✏️ Update student details
 
-- Add a student
+❌ Delete a student
 
-- View all students
+🌐 Responsive UI for easy access across devices
 
-- Update student details
+💻 Technologies
+Java 17
 
-- Delete a student
+Spring Boot (REST API)
 
----
+HTML, CSS, JavaScript
 
-## 💻 Technologies
+PostgreSQL
 
-- Java 17
-  
-- Hibernate (JPA)
+Hibernate (JPA)
 
-- PostgreSQL
+Maven
 
--  Maven
-
-
-Project Structure
-
+📂 Project Structure
+csharp
+Copy
+Edit
 src/
  └── main/
-     └── java/
-         ├── entity/
-         │    └── StudentEntity.java
-         ├── dao/
-         │    └── StudentDAO.java
-         ├── util/
-         │    └── JpaUtil.java
-         └── app/
-              └── MainApp.java
+     ├── java/
+     │   ├── controller/        # REST API Controllers
+     │   ├── service/           # Business Logic
+     │   ├── repository/        # Data Access (JPA)
+     │   ├── entity/            # Student Entity
+     │   └── StudentManagementSystemApplication.java
+     └── resources/
+         ├── static/            # HTML, CSS, JS
+         └── application.properties
 
+         
+📸 Screenshots
 
-    
+🖥 Application UI
 
+📜 API Response Example
 
-## 👤 Contact
+👤 Author & Team
 
-- **Name:** Samarth Thite
-  
-- **Email:** samarththite1010@gmail.com
-  
-- **GitHub:** Samarth-Thite
- 
- Team member: Kartik Gade
+Name: Samarth Thite
 
+Email: samarththite1010@gmail.com
 
-Output:## 📸 Screenshot
+GitHub: Samarth-Thite
 
-![Student Management System Output](screenshots/stud.png)
+Team Member: Kartik Gade
 
