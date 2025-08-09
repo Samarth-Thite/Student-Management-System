@@ -110,4 +110,6 @@ DELETE	/api/students/{id}	Delete student
 
 📸 Screenshots
 
+<img width="1366" height="768" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/63c736df-9969-41b2-b3d0-9806025c133e" />
 
+<img width="1366" height="768" alt="Screenshot (13)" src="https://github.com/user-attachments/assets/5811222a-958b-47c1-91a8-67793a0e544b" />
