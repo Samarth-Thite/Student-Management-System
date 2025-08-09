@@ -108,6 +108,16 @@ PUT	/api/students/{id}	Update student
 
 DELETE	/api/students/{id}	Delete student
 
+## 📞 Contact
+
+- **Name:** Samarth Prasad Thite  
+
+- **Email:** samarththite1010@gmail.com  
+
+- **GitHub:** [github.com/yourusername](https://github.com/Samarth-Thite)  
+
+Team Menmber:Kartik Gade
+
 📸 Screenshots
 
 <img width="1366" height="768" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/63c736df-9969-41b2-b3d0-9806025c133e" />
